@@ -107,7 +107,31 @@ main>section{
 #quick-list{
     color: #727272;width: 500;height: 45px; 
 }
-
+/*facts style*/
+.facts-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+   
+    
+}
+.fact{
+    border: 1px solid rgba(255, 144, 14, 1);
+    width: 240;height: 240px;
+    border-radius: 8px;
+    text-align: center;
+    align-items: center; justify-content: center;
+ } 
+ .help{
+    margin-top: 40px;
+ }
+ .fact-number{
+ color: #424242;
+ font-weight: 500;font-size:20px;
+}
+ .fact-name{
+    font-weight: 500;font-size: 20px;
+    color: #727272;
+ }
 
 
 @media screen and (max-width:576px) {
