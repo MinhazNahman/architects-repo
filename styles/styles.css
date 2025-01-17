@@ -89,6 +89,10 @@ main>section{
 /*teams styles*/
 .teams{
     align-items: center;
+    margin-left: 30px;
+}
+.feature{
+    margin-left: 40px;
 }
 .team-img{
     display: grid;
@@ -132,6 +136,39 @@ main>section{
     font-weight: 500;font-size: 20px;
     color: #727272;
  }
+ .Sponspors-info{
+    max-width: 540px;
+    margin: 50px auto;
+    text-align: center;
+ }
+ .sponspor-img{
+    margin-left: 40px;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+ }
+ .sponspor-img img{
+    filter: grayscale(100%);
+ }
+ #love-id{
+    border-left: 5px solid rgba(255, 144, 14, 1);
+    padding-left: 21px;
+ }
+ .features-card .features-titel{
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin-top: 0px;
+    margin-bottom: 0px;
+   
+ }
+ .features-card{
+    padding: 30px;
+    box-shadow: 0 4px 30px 0 #9a9999;
+    margin-bottom: 20px;
+    border-radius: 8px;
+ }
+ .love{
+    gap: 50px;
+ }
 
 
 @media screen and (max-width:576px) {
@@ -140,15 +177,26 @@ main>section{
     .teams{
         flex-direction: column;
     }
-    .team-img{
+    .team-img ,{
         grid-template-columns: repeat(1,1fr);
     }
+    .facts-container , .Our-Sponspors,{
+        grid-template-columns: repeat(2,1fr);
+        justify-content: center;
+        gap: 20px;
+    }
+
 }
 /* medium size device */
 @media screen and (min-width:577px) and (max-width:992px) {
     .teams{
         flex-direction: column;
 
+    }
+    .facts-container , .sponspor-img {
+        grid-template-columns: repeat(2,1fr);
+        justify-content: center;
+        gap: 20px;
     }
     
 }
